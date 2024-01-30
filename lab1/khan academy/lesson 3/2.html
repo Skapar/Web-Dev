@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Recipe Book</title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f8f8f8;
+                color: #333;
+                line-height: 1.6;
+            }
+
+            .container {
+                width: 80%;
+                margin: auto;
+                overflow: hidden;
+            }
+
+            h1, h2, h3 {
+                color: #f40;
+            }
+
+            ul {
+                list-style-type: none;
+            }
+
+            li {
+                margin-bottom: 5px;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+
+            table, th, td {
+                border: 1px solid #ddd;
+            }
+
+            th, td {
+                padding: 10px;
+            }
+
+            th {
+                background-color: #f4f4f4;
+            }
+
+            a {
+                color: #00f;
+            }
+
+            .recipe {
+                background: white;
+                padding: 15px;
+                border-radius: 8px;
+                margin-top: 20px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>My Recipe Book</h1>
+            
+            <h2>Contents:</h2>
+            <ol>
+                <li><a href="https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/">Chocolate Chip Cookies</a></li>
+                <li><a href="https://cookieandkate.com/margherita-pizza-recipe/">Classic Margherita Pizza</a></li>
+            </ol>
+
+            <div class="recipe" id="recipe1">
+                <h2>Chocolate Chip Cookies</h2>
+                <ul>
+                    <li>Time: 30 minutes</li>
+                    <li>Serves: 4</li>
+                </ul>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Flour</td><td>2 cups</td></tr>
+                        <tr><td>Sugar</td><td>1 cup</td></tr>
+                        <tr><td>Chocolate Chips</td><td>1 cup</td></tr>
+                    </tbody>
+                </table>
+                
+                <h3>Preparation Steps:</h3>
+                <p><strong>Step 1:</strong> Preheat your oven to 375°F (190°C).</p>
+                <p><strong>Step 2:</strong> Mix all ingredients in a bowl.</p>
+                <p><strong>Step 3:</strong> Place dough on baking sheet and bake for 10-12 minutes.</p>
+
+                <p><em>Source: <a href="https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/">Chocolate Chip Cookies</a></em></p>
+            </div>
+
+            <div class="recipe" id="recipe2">
+                <h2>Classic Margherita Pizza</h2>
+                <p><em>Source: <a href="https://cookieandkate.com/margherita-pizza-recipe/">Classic Margherita Pizza</a></em></p>
+            </div>
+
+        </div>
+    </body>
+</html>

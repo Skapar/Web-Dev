@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #000;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.hero {
+    background-image: url('./photo-bg-1.png');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 20rem 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.hero button {
+    padding: 1rem 2rem;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#why-us {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5rem;
+    left: 2%;
+}
+
+#why-us .reason {
+    position: relative;
+    width: 30%;
+    left: 5%;
+    top: 10%;
+}
+
+#tours {
+    background-color: #f2f2f2;
+    padding: 2rem;
+}
+
+#tours .tour {
+    background-color: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+#tours .tour-date {
+    font-weight: bold;
+}
+
+#reviews {
+    padding: 2rem;
+}
+
+#reviews .review {
+    background-color: #e6e6e6;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#faq {
+    padding: 2rem;
+}
+
+#faq .faq-item {
+    background-color: #d9d9d9;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+.quest{
+    position: relative;
+    left: 2.5%;
+}
+#contacts form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#contacts input,
+#contacts button {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+#contacts button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
