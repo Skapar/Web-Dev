@@ -1,5 +1,6 @@
 img {
     width: 100px;
+    margin-top: 70px;
 }
 
 button {
@@ -7,11 +8,17 @@ button {
     margin-right: 10px;
 }
 
-
+.contSort {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .whatsapp {
     background-color: green;
 }
-
+.telegram {
+  background-color: darkblue;
+}
 .delete {
     background-color: rgb(182, 14, 14);
 }

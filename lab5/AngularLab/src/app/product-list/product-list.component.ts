@@ -17,7 +17,7 @@ export class ProductListComponent implements OnInit{
   products = [...products];
 
   constructor(private route: ActivatedRoute,) {}
-  
+
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       const categoryName = params.get('categoryName');
@@ -28,17 +28,29 @@ export class ProductListComponent implements OnInit{
       }
     });
   }
+  like(product: Product, PlusMinus: boolean) {
+    if (PlusMinus == true && product.likes % 2 == 0){
+      product.likes++;
+    }
+    else if (PlusMinus == true && product.likes % 2 != 0){
+      product.likes--;
+    }
+    else{
+      product.likes++;
+    }
+
+
+  }
+
+  sortByPrice(ascending: boolean): void {
+    this.products.sort((a, b) => ascending ? a.price - b.price : b.price - a.price);
+    this.products = [...this.products];
+  }
 
   shareTelegram(product: Product) {
     const telegramUrl = `https://t.me/share/url?url=${encodeURIComponent(product.link)}`;
     window.open(telegramUrl, '_blank');
   }
-  
-  shareWhatsapp(product: Product){
-    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent('Check out this product!')}%20${encodeURIComponent(product.link)}`;
-    window.open(whatsappUrl, '_blank')
-  }
-
 
   onNotify() {
     window.alert('You will be notified when the product goes on sale');

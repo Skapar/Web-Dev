@@ -1,6 +1,7 @@
-<h2>Products</h2>
-
-
+<div class="contSort">
+  <button class = "telegram" type="button" (click)="sortByPrice(true)">Sort Asc</button>
+  <button class = "telegram" type="button" (click)="sortByPrice(false)">Sort Desc</button>
+</div>
 <div *ngFor="let product of products">
   <img src={{product.image}}>
 
@@ -12,26 +13,27 @@
     </a>
   </h3>
 
-  <p *ngIf="product.description">Description: {{ product.description }}</p>
+  <p *ngIf="product.description">{{ product.description }}</p>
   <p *ngIf="product.rating"> Rating {{product.rating}}/5</p>
 
-  <p *ngIf="product.price">Price: {{product.price}} ₸</p>
+  <p *ngIf="product.price">{{product.price}} ₸</p>
 
   <p> {{product.likes}} likes</p>
 
-  
+
 <a [href]="product.link"><button>Open Page</button></a>
 
-  <button type="button" (click)="shareTelegram(product)">Share in Telegram</button>
+  <button class = "telegram" type="button" (click)="shareTelegram(product)">Share in Telegram</button>
 
-  <button class="whatsapp" type="button" (click)="shareWhatsapp(product)">Share in Whatsapp</button>
+  <button class = "telegram" type="button" (click)="like(product, true)">Like</button>
 
   <button class="delete" type="button" (click)="onDeleteProduct(product)">Delete</button>
+
 
   <app-product-alerts [product]="product" (notify)="onNotify()">
   </app-product-alerts>
 </div>
-<!-- 
+<!--
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at https://angular.io/license
