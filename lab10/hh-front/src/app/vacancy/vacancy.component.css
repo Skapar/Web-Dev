@@ -1,0 +1,24 @@
+.vacancy {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #ffa5a5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+  flex-direction: row;
+}
+
+.vacancy div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.vacancy h3, .vacancy p {
+  margin: 5px 0;
+}
+
+.vacancy h1 {
+  color: #2a9d8f;
+  font-size: 24px;
+}
